@@ -1,0 +1,17 @@
+html,
+.container {width: 100%}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    flex-flow: row no-wrap;
+    margin-right: 50px
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+}
+
