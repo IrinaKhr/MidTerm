@@ -1,17 +1,246 @@
 html,
-.container {width: 100%}
+.container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f4fc;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    /* identical to box height, or 30px */
+    color: #514D67;
+}
 
 .navbar {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    height: 122px;
+    margin: 0 130px 106px 130px;
+    padding: 0;
     list-style: none;
-    justify-content: flex-end;
-    flex-flow: row no-wrap;
-    margin-right: 50px
+
 }
 
 .navbar a {
     text-decoration: none;
-    color: black;
+    color: #514D67;
     padding: 50px;
+
 }
 
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+
+
+}
+
+#home {
+    color: #072ACB;
+}
+
+.contact a {
+    background-color: #072ACB;
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    padding: 10px 30px 10px 30px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 130px 130px 130px;
+
+}
+
+.headertext {}
+
+.headertext h1 {
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #514D67;
+}
+
+.headerlist {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 50px 0 50px 0;
+
+}
+
+.headerlist a {
+    text-decoration: none;
+}
+
+
+.work a {
+    color: #514D67;
+    padding-left: 50px
+}
+
+.headerimages {
+    background-repeat: no-repeat;
+    background-image: url("/project-assets/hero-section/hero-image.png");
+    background-size: contain;
+    position: relative;
+
+}
+
+
+#card1 {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 20px;
+    left: -50px;
+
+}
+
+
+#card2 {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    bottom: -100px;
+    left: 330px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 96px;
+    margin: 0 130px 200px 130px;
+    color: #514D67;
+}
+.projects h2 {
+    margin-left: 150px
+}
+
+.projectboxes {
+    display: flex;
+    justify-content: center;
+}
+
+.projectboxes div {
+    width: 315px;
+    margin: 0 20px 136px 20px;
+    padding: 0 30px 50px 30px;
+    background-color:  rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.projectboxes img {
+    width: 315px;
+    height:200px;
+    position: relative;
+    right: 30px;
+}
+
+.clientfeedback {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: #292e47;
+    height: 622px;
+    padding-top: 200px;
+    margin: 50px;
+    background-image: url("/project-assets/testimonial-section/orbit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.clientfeedback img {
+    width:100px
+}
+.services h2 {
+    margin-left: 150px
+}
+.serviceboxes {
+    display: flex;
+    justify-content: center;
+}
+
+.serviceboxes div {
+    width: 315px;
+    margin: 0 20px 136px 20px;
+    padding: 50px 30px 50px 30px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+
+.serviceboxes img {
+    background-color: #ECF7FF;
+    border: #ECF7FF;
+    padding: 15px;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+}
+
+.questions {
+    text-align: center;
+    background-color: #FFC600;
+    height: 242px;
+    padding-top: 100px;
+    margin: 50px
+}
+
+#email {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 100px 10px 10px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+}
+
+.subscribe {
+    border: 1px #072ACB solid;
+    background-color: #072ACB;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 242px;
+    margin: 0 130px 0 130px;
+}
+
+.footerlist {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30% 30% 100%;
+    grid-template-rows: 50px 50px;
+    grid-gap: 40%;
+    margin-right: 130px;
+}
+
+.footerlist a {
+    text-decoration: none;
+    color: #514D67;
+
+}
+
+.footerleft {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly
+}
