@@ -7,9 +7,8 @@ html,
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    /* identical to box height, or 30px */
     color: #514D67;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -18,16 +17,16 @@ html,
     align-items: flex-end;
     flex-flow: row wrap;
     height: 122px;
-    margin: 0 130px 106px 130px;
+    margin: 0 200px 106px 200px;
     padding: 0;
     list-style: none;
-
+    box-sizing: border-box;
 }
 
 .navbar a {
     text-decoration: none;
     color: #514D67;
-    padding: 50px;
+    padding: 40px;
 
 }
 
@@ -41,6 +40,14 @@ html,
 
 #home {
     color: #072ACB;
+    background-color: #f2f4fc;
+    font-weight: lighter;
+    padding: 10px 30px 10px 30px;
+}
+
+#home:hover {
+    background-color: #d1edff;
+    color: rgb(255, 255, 255);
 }
 
 .contact a {
@@ -50,15 +57,22 @@ html,
     padding: 10px 30px 10px 30px;
 }
 
+.contact a:hover {
+    background-image: linear-gradient(to right,
+            #072acb,
+            #25aae1,
+            #A2D6F2,
+            #25aae1,
+            #072acb);
+}
+
 
 header {
     display: flex;
-    justify-content: space-between;
-    margin: 0 130px 130px 130px;
-
+    justify-content: center;
+    margin: 0 200px 70px 200px;
+    box-sizing: border-box;
 }
-
-.headertext {}
 
 .headertext h1 {
     position: relative;
@@ -67,8 +81,9 @@ header {
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
-    color: #514D67;
+
 }
+
 
 .headerlist {
     display: flex;
@@ -118,67 +133,133 @@ header {
 
 .logos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
     height: 96px;
-    margin: 0 130px 200px 130px;
-    color: #514D67;
+    margin: 0 200px 100px 200px;
 }
+
+.projects {
+    margin: 0 200px 0 200px
+}
+
 .projects h2 {
-    margin-left: 150px
+    margin: 0 0 50px 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
 }
 
 .projectboxes {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .projectboxes div {
-    width: 315px;
-    margin: 0 20px 136px 20px;
+    width: 300px;
     padding: 0 30px 50px 30px;
-    background-color:  rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
+    font-size: 15px;
+    line-height: 18px;
 }
 
 .projectboxes img {
-    width: 315px;
-    height:200px;
+    width: 300px;
+    height: 200px;
     position: relative;
     right: 30px;
 }
 
+.link-btn a {
+    text-decoration: none;
+}
+
+.link-btn {
+    padding-top: 50px;
+}
+
 .clientfeedback {
-    text-align: center;
     color: rgb(255, 255, 255);
     background-color: #292e47;
-    height: 622px;
-    padding-top: 200px;
-    margin: 50px;
+    height: 400px;
+    padding: 100px;
+    margin: 60px;
     background-image: url("/project-assets/testimonial-section/orbit.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between
+}
+
+.clientfeedback div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .clientfeedback img {
-    width:100px
+    width: 100px;
 }
+
+.clientfeedback h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+
+}
+
+.feedback {
+    font-size: 20px;
+    line-height: 150%;
+    align-self: center;
+    color: #ffc600;
+
+}
+
+.clientlist {
+    list-style: none;
+}
+
+.clientname {
+    font-size: 17px;
+    line-height: 150%;
+    color: #A2D6F2;
+}
+
+.clientcompany {
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.services {
+    margin: 0 200px 0 200px
+}
+
 .services h2 {
-    margin-left: 150px
+
+    margin: 0 0 50px 10px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
 }
+
 .serviceboxes {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .serviceboxes div {
-    width: 315px;
-    margin: 0 20px 136px 20px;
+    width: 300px;
+    margin: 0 20px 50px 20px;
     padding: 50px 30px 50px 30px;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
+    font-size: 17px;
+    line-height: 150%;
 }
 
 
@@ -193,26 +274,26 @@ header {
 
 .questions {
     text-align: center;
-    background-color: #FFC600;
+    background-color: #ffc600;
     height: 242px;
     padding-top: 100px;
-    margin: 50px
+    margin: 60px;
 }
 
 #email {
     background-color: rgb(255, 255, 255);
-    padding: 10px 100px 10px 10px;
+    padding: 20px 100px 20px 20px;
     margin: 10px 0 10px 0;
     font-weight: lighter;
 }
 
 .subscribe {
-    border: 1px #072ACB solid;
-    background-color: #072ACB;
+    border: 1px #072acb solid;
+    background-color: #072acb;
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 20px 30px 20px 30px;
     margin: 10px 0 10px 0;
-    font-weight: lighter
+    font-weight: lighter;
 }
 
 footer {
@@ -221,7 +302,9 @@ footer {
     align-items: center;
     flex-flow: row wrap;
     height: 242px;
-    margin: 0 130px 0 130px;
+    margin: 0 200px 0 200px;
+    font-size: 13px;
+    line-height: 15px;
 }
 
 .footerlist {
@@ -230,17 +313,21 @@ footer {
     grid-template-columns: 30% 30% 100%;
     grid-template-rows: 50px 50px;
     grid-gap: 40%;
-    margin-right: 130px;
+    margin-right: 200px;
 }
 
 .footerlist a {
     text-decoration: none;
-    color: #514D67;
-
+    color: #514d67;
 }
 
 .footerleft {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.footerleft img {
+    padding-bottom: 20px;
+
 }
