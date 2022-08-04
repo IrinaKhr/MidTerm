@@ -263,13 +263,14 @@ header {
 }
 
 
-.serviceboxes img {
+.serviceboximage {
     background-color: #ECF7FF;
     border: #ECF7FF;
-    padding: 15px;
     border-radius: 50%;
     box-sizing: border-box;
-
+    width:80px;
+    height:80px;
+    padding: 20px
 }
 
 .questions {
@@ -282,9 +283,15 @@ header {
 
 #email {
     background-color: rgb(255, 255, 255);
-    padding: 20px 100px 20px 20px;
+    padding: 20px 100px 20px 30px;
     margin: 10px 0 10px 0;
     font-weight: lighter;
+}
+
+.questions label img {
+    position: relative;
+    top: 8px;
+    right:10px
 }
 
 .subscribe {
@@ -293,8 +300,10 @@ header {
     color: rgb(255, 255, 255);
     padding: 20px 30px 20px 30px;
     margin: 10px 0 10px 0;
+    font-size: 15px;
     font-weight: lighter;
 }
+
 
 footer {
     display: flex;
@@ -313,7 +322,7 @@ footer {
     grid-template-columns: 30% 30% 100%;
     grid-template-rows: 50px 50px;
     grid-gap: 40%;
-    margin-right: 200px;
+    margin-right: 100px;
 }
 
 .footerlist a {
@@ -330,4 +339,201 @@ footer {
 .footerleft img {
     padding-bottom: 20px;
 
+}
+@media (max-width: 1024px) {
+  .navbar {
+    justify-content: space-between;
+    margin: 0 100px 106px 100px;
+  }
+
+  .navbar a {
+    padding: 20px;
+  }
+  .contact a {
+    padding: 10px 20px 10px 20px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 0 0 50px 100px;
+  }
+
+ 
+
+  
+  .projects {
+    margin: 0 100px 0 100px;
+  }
+
+  .projects h2 {
+    margin: 0 0 50px 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .projectboxes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projectboxes div {
+    width: 200px;
+    padding: 0 30px 50px 30px;
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .projectboxes img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 30px;
+  }
+
+
+  .questions {
+    text-align: center;
+    background-color: #ffc600;
+    height: 200px;
+    padding-top: 50px;
+    margin: 60px;
+  }
+
+  #email {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 100px 15px 15px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+  }
+
+  .subscribe {
+    border: 1px #072acb solid;
+    background-color: #072acb;
+    color: rgb(255, 255, 255);
+    padding: 16px 30px 14px 30px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+  }
+
+  footer {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 0 100px 0 100px;
+  }
+
+  .footerlist {
+    grid-template-rows: 40px 40px;
+    grid-gap: 20%;
+    margin-right: 50px;
+  }
+
+  .footerleft img {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    margin: 0 0 150px 0;
+    text-align: center;
+    background-color: #a2d6f2;
+  }
+
+  .navbar img {
+    padding: 10px 0 10px 40px;
+  }
+
+  .nav {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #a2d6f2;
+  }
+  .nav a {
+    display: block;
+    color: white;
+    padding: 10px 30px 10px 30px;
+  }
+  .nav a:hover {
+    background-image: linear-gradient(
+      to right,
+      #a2d6f2,
+      #25aae1,
+      #a2d6f2,
+      #25aae1,
+      #a2d6f2
+    );
+    color: rgb(255, 255, 255);
+  }
+
+  .contact a {
+    display: block;
+    text-align: center;
+    padding: 10px 0 10px 40px;
+  }
+
+  #home {
+    background-color: #a2d6f2;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 10px 50px 10px;
+  }
+
+  
+  .questions {
+    text-align: center;
+    background-color: #ffc600;
+    height: 242px;
+    padding-top: 100px;
+    margin: 60px;
+  }
+
+  #email {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 100px 20px 20px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+  }
+
+  .subscribe {
+    border: 1px #072acb solid;
+    background-color: #072acb;
+    color: rgb(255, 255, 255);
+    padding: 20px 30px 20px 30px;
+    margin: 10px 0 10px 0;
+    font-weight: lighter;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+    height: 142px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .footerlist {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 30% 30% 100%;
+    grid-template-rows: 30px 30px;
+    grid-gap: 20%;
+    margin-right: 100px;
+  }
+
+  .footerleft img {
+    padding-bottom: 8px;
+  }
 }
