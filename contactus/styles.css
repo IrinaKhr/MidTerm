@@ -1,6 +1,14 @@
 html,
+body {
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0
+}
+
+
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: #f2f4fc;
@@ -46,6 +54,15 @@ html,
   text-decoration: underline #072acb;
 }
 
+
+.circlelogo {
+  transition: transform .2s;
+}
+
+.circlelogo:hover {
+  transform: scale(1.1)
+}
+
 .contact a {
   background-color: #072acb;
   color: rgb(255, 255, 255);
@@ -54,7 +71,7 @@ html,
 }
 
 .contact a:hover {
-  background-color:#292e47
+  background-color: #072AEE;
 }
 
 h1 {
@@ -124,13 +141,8 @@ h1 {
 }
 
 .submit:hover {
-  background-image: linear-gradient(to right,
-      #072acb,
-      #25aae1,
-      #a2d6f2,
-      #25aae1,
-      #072acb);
-  border: 1px solid #a2d6f2;
+  background-color: #072AEE;
+  border: 1px solid #072AEE;
 }
 
 footer {
@@ -166,6 +178,11 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+  transition: transform .2s;
+}
+
+.footerleft:hover {
+  transform: scale(1.1)
 }
 
 .footerleft img {
@@ -241,6 +258,7 @@ footer {
     margin: 0 0 150px 0;
     text-align: center;
     background-color: #a2d6f2;
+    padding: 0;
   }
 
   .navbar img {
@@ -271,16 +289,6 @@ footer {
     text-decoration: none;
   }
 
-
-  .contact a:hover {
-    background-image: linear-gradient(to right,
-        #072acb,
-        #25aae1,
-        #a2d6f2,
-        #25aae1,
-        #072acb);
-  }
-
   .contact a {
     display: block;
     text-align: center;
@@ -299,7 +307,7 @@ footer {
   }
 
   .contactform {
-    margin: 0 10px 0 10px;
+    margin: 0 5px 0 5px;
     font-size: 15px;
   }
 

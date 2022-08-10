@@ -1,4 +1,12 @@
 html,
+body {
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  margin: 0
+}
+
+
 .container {
   width: 100vw;
   margin: 0;
@@ -46,6 +54,14 @@ html,
   text-decoration: underline #072acb;
 }
 
+.circlelogo {
+  transition: transform .2s;
+
+}
+
+.circlelogo:hover {
+  transform: scale(1.1)
+}
 
 .contact a {
   background-color: #072acb;
@@ -55,7 +71,7 @@ html,
 }
 
 .contact a:hover {
-  background-color: #292e47
+  background-color: #072AEE;
 }
 
 h1 {
@@ -119,6 +135,11 @@ h1 {
   line-height: 18px;
   display: flex;
   flex-flow: column nowrap;
+  transition: transform .2s;
+}
+
+.projectboxes div:hover {
+  transform: scale(1.1)
 }
 
 #projectimagefour {
@@ -209,13 +230,8 @@ h1 {
 }
 
 .subscribe:hover {
-  background-image: linear-gradient(to right,
-      #072acb,
-      #25aae1,
-      #a2d6f2,
-      #25aae1,
-      #072acb);
-  border: 1px solid #a2d6f2;
+  background-color: #072AEE;
+  border: 1px solid #072AEE;
 }
 
 footer {
@@ -251,6 +267,11 @@ footer {
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-start;
+  transition: transform .2s;
+}
+
+.footerleft:hover {
+  transform: scale(1.1)
 }
 
 .footerleft img {
@@ -385,12 +406,7 @@ footer {
   }
 
   .contact a:hover {
-    background-image: linear-gradient(to right,
-        #072acb,
-        #25aae1,
-        #a2d6f2,
-        #25aae1,
-        #072acb);
+    background-color: #072AEE;
   }
 
   .contact a {
@@ -460,6 +476,8 @@ footer {
     flex-flow: row nowrap;
   }
 
+
+
   #projectimagefour {
     width: 30%;
   }
@@ -481,8 +499,6 @@ footer {
   }
 
   .questions {
-    text-align: center;
-    background-color: #ffc600;
     height: 150px;
     padding-top: 30px;
     margin: 10px;
@@ -490,11 +506,10 @@ footer {
   }
 
   #email {
-    padding: 20px 20px 20px 50px;
+    padding: 10px 10px 10px 10px;
     margin: 10px 0 10px 0;
-    background-position: left;
-    background-position: 5px;
     text-align: center;
+    background-image: none;
 
   }
 
@@ -502,14 +517,9 @@ footer {
     font-size: 15px;
   }
 
-
   .subscribe {
-    border: 1px #072acb solid;
-    background-color: #072acb;
-    color: rgb(255, 255, 255);
     padding: 10px 20px 10px 20px;
     margin: 10px 0 10px 0;
-    font-weight: lighter;
   }
 
   footer {

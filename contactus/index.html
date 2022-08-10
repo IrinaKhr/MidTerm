@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact us</title>
     <link rel="stylesheet" href="/contactus/styles.css" />
+    <script src="index.js"></script>
 </head>
 
 <body>
     <div class="container">
         <nav>
             <ul class="navbar">
-                <li> <img alt="CircleLogo" src="/project-assets/logos/circle.svg" /></li>
+                <li> <img alt="CircleLogo" class ="circlelogo" src="/project-assets/logos/circle.svg" /></li>
                 <li>
                     <ul class="nav">
                         <li> <a id="home" href="../index.html" target="_blank">Home</a></li>
@@ -31,27 +32,27 @@
             <div>
                 <label for="fullname">Full Name*:</label>
                 <br>
-                <input class="contacttext" placeholder="Enter your full name"> </input>
+                <input required class="contacttext" placeholder="Enter your full name"> </input>
             </div>
             <br>
             <div class="emailandphone">
                 <div id="email">
-                    <label for="email">Email</label>
+                    <label for="email">Email*</label>
                     <br>
-                    <input class="contacttext" placeholder="Enter your email address"> </input>
+                    <input required class="contacttext" placeholder="Enter your email address" type="email"> </input>
                 </div>
                 <div id="phone">
-                    <label for="phone">Phone</label>
+                    <label for="phone">Phone*</label>
                     <br>
-                    <input class="contacttext" placeholder="Enter your phone number"> </input>
+                    <input required class="contacttext" placeholder="Enter your phone number" type="tel"> </input>
                 </div>
 
             </div>
             <br>
             <div>
-                <label for="comment">Message</label>
+                <label for="comment">Message*</label>
                 <br>
-                <textarea class="contacttext" placeholder="Write your message here..." rows="10"></textarea>
+                <textarea required class="contacttext" placeholder="Write your message here..." rows="10"></textarea>
             </div>
             <br>
             <div>
