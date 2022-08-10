@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     position: relative;
     margin: 0
-  }
+}
 
 .container {
     width: 100%;
@@ -157,7 +157,7 @@ header {
 
 .logos:hover {
     transform: scale(1.1)
-  }
+}
 
 .projects {
     margin: 0 200px 0 200px;
@@ -191,7 +191,7 @@ header {
 
 .projectboxes div:hover {
     transform: scale(1.1)
-  }
+}
 
 #projectimageone {
     background-image: url(/project-assets/projects-section/1.jpg);
@@ -322,7 +322,7 @@ header {
 
 .serviceboxes div:hover {
     transform: scale(1.1)
-  }
+}
 
 .serviceboximage {
     background-color: #ecf7ff;
@@ -936,7 +936,7 @@ footer {
         height: 200px;
         padding: 0;
         margin: 0;
-        width:100%;
+        width: 100%;
         background-image: url("/project-assets/testimonial-section/orbit.png");
         background-repeat: no-repeat;
         background-size: contain;
