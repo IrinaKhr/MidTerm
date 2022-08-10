@@ -42,17 +42,10 @@ html,
   padding: 10px 30px 10px 30px;
 }
 
-#home:hover {
-  background-image: linear-gradient(
-    to right,
-    #a2d6f2,
-    #25aae1,
-    #a2d6f2,
-    #25aae1,
-    #a2d6f2
-  );
-  color: rgb(255, 255, 255);
+.nav a:hover {
+  text-decoration: underline #072acb;
 }
+
 
 .contact a {
   background-color: #072acb;
@@ -62,14 +55,7 @@ html,
 }
 
 .contact a:hover {
-  background-image: linear-gradient(
-    to right,
-    #072acb,
-    #25aae1,
-    #a2d6f2,
-    #25aae1,
-    #072acb
-  );
+  background-color: #292e47
 }
 
 h1 {
@@ -95,8 +81,8 @@ h1 {
 
 .description div {
   background-image: url(/project-assets/projects-section/1.jpg);
-  width:100%;
-  height:400px;
+  width: 100%;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 50px;
@@ -105,6 +91,7 @@ h1 {
 .description p {
   text-align: justify;
 }
+
 .projects {
   margin: 0 200px 0 200px;
 }
@@ -118,23 +105,55 @@ h1 {
 
 .projectboxes {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
 }
 
 .projectboxes div {
-  width: 20em;
-  padding: 0 30px 50px 30px;
+  width: 25%;
+  padding: 0;
+  margin: 0 20px 50px 20px;
   background-color: rgb(255, 255, 255);
   box-sizing: border-box;
   font-size: 15px;
   line-height: 18px;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
-.projectboxes img {
-  width: 125%;
-  position: relative;
-  right: 30px;
+#projectimagefour {
+  background-image: url(/project-assets/projects-section/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+#projectimagefive {
+  background-image: url(/project-assets/projects-section/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+
+}
+
+#projectimagesix {
+  background-image: url(/project-assets/projects-section/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.projecttext {
+  margin: 0 10px 30px 10px;
 }
 
 .link-btn a {
@@ -143,6 +162,10 @@ h1 {
 
 .link-btn {
   padding-top: 50px;
+}
+
+.link-btn a:hover {
+  text-decoration: underline #072acb;
 }
 
 .questions {
@@ -155,15 +178,24 @@ h1 {
 
 #email {
   background-color: rgb(255, 255, 255);
-  padding: 20px 100px 20px 20px;
+  padding: 20px 100px 20px 50px;
   margin: 10px 0 10px 0;
   font-weight: lighter;
+  background-image: url("/project-assets/newsletter/icon/mail.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position: 10px;
+  border: 1px solid rgb(255, 255, 255);
+
 }
 
-.questions label img {
-  position: relative;
-  top: 8px;
-  right:10px
+::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #514d67;
 }
 
 .subscribe {
@@ -172,7 +204,18 @@ h1 {
   color: rgb(255, 255, 255);
   padding: 20px 30px 20px 30px;
   margin: 10px 0 10px 0;
+  font-size: 15px;
   font-weight: lighter;
+}
+
+.subscribe:hover {
+  background-image: linear-gradient(to right,
+      #072acb,
+      #25aae1,
+      #a2d6f2,
+      #25aae1,
+      #072acb);
+  border: 1px solid #a2d6f2;
 }
 
 footer {
@@ -200,6 +243,10 @@ footer {
   color: #514d67;
 }
 
+.footerlist a:hover {
+  text-decoration: underline #072acb;
+}
+
 .footerleft {
   display: flex;
   flex-flow: column nowrap;
@@ -219,6 +266,7 @@ footer {
   .navbar a {
     padding: 20px;
   }
+
   .contact a {
     padding: 10px 20px 10px 20px;
   }
@@ -231,11 +279,16 @@ footer {
   }
 
   .description {
-    margin: 0 200px 0 100px;
+    margin: 0 100px 0 100px;
     display: flex;
     flex-flow: column nowrap;
     width: 80%;
     padding-bottom: 50px;
+
+  }
+
+  .description article {
+    padding-bottom: 0;
   }
 
   .projects {
@@ -243,7 +296,7 @@ footer {
   }
 
   .projects h2 {
-    margin: 0 0 50px 0;
+    margin: 0 0 10px 0;
     font-weight: 600;
     font-size: 30px;
     line-height: 35px;
@@ -252,24 +305,14 @@ footer {
   .projectboxes {
     display: flex;
     justify-content: space-between;
+    flex-flow: row nowrap;
   }
 
   .projectboxes div {
-    width: 250px;
-    padding: 0 30px 50px 30px;
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
+    padding: 0;
     font-size: 15px;
     line-height: 18px;
   }
-
-  .projectboxes img {
-    width: 250px;
-    height: 50%;
-    position: relative;
-    right: 30px;
-  }
-
 
   .questions {
     text-align: center;
@@ -279,16 +322,6 @@ footer {
     margin: 60px;
   }
 
-  #email {
-    background-color: rgb(255, 255, 255);
-    padding: 15px 100px 15px 20px;
-    margin: 10px 0 10px 0;
-    font-weight: lighter;
-  }
-  .questions label img {
-    position: relative;
-    width: 4%
-  }
   .subscribe {
     border: 1px #072acb solid;
     background-color: #072acb;
@@ -314,6 +347,7 @@ footer {
     padding-bottom: 10px;
   }
 }
+
 @media (max-width: 768px) {
   .navbar {
     display: block;
@@ -332,21 +366,31 @@ footer {
     flex-flow: column wrap;
     background-color: #a2d6f2;
   }
+
   .nav a {
     display: block;
     color: white;
     padding: 10px 30px 10px 30px;
   }
+
   .nav a:hover {
-    background-image: linear-gradient(
-      to right,
-      #a2d6f2,
-      #25aae1,
-      #a2d6f2,
-      #25aae1,
-      #a2d6f2
-    );
+    background-image: linear-gradient(to right,
+        #a2d6f2,
+        #25aae1,
+        #a2d6f2,
+        #25aae1,
+        #a2d6f2);
     color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  .contact a:hover {
+    background-image: linear-gradient(to right,
+        #072acb,
+        #25aae1,
+        #a2d6f2,
+        #25aae1,
+        #072acb);
   }
 
   .contact a {
@@ -377,8 +421,18 @@ footer {
   .description article {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
+
+  .description div {
+    background-image: url(/project-assets/projects-section/1.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+  }
+
   .projects {
     margin: 0 10px 0 10px;
   }
@@ -395,57 +449,65 @@ footer {
     flex-flow: column wrap;
     justify-content: space-between;
   }
- .subbox {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom:10px;
 
- }
   .projectboxes div {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    margin: 0 20px 20px 20px;
     padding: 0;
-    background-color: rgb(255, 255, 255);
-    box-sizing: border-box;
     font-size: 15px;
     line-height: 18px;
+    display: flex;
+    flex-flow: row nowrap;
   }
 
-  .projectboxes img {
-    width: 85%;
-    height: 90%;
-    position: relative;
-    left:3px
+  #projectimagefour {
+    width: 30%;
   }
 
-  .link-btn a {
-    text-decoration: none;
+  #projectimagefive {
+    width: 30%;
+  }
+
+  #projectimagesix {
+    width: 30%;
+  }
+
+  .projecttext {
+    margin: 0 10px 0 30px;
   }
 
   .link-btn {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 
   .questions {
     text-align: center;
     background-color: #ffc600;
-    height: 200px;
-    padding-top: 50px;
-    margin: 30px;
+    height: 150px;
+    padding-top: 30px;
+    margin: 10px;
+    font-size: 13px;
   }
 
   #email {
-    background-color: rgb(255, 255, 255);
-    padding: 10px 100px 10px 20px;
+    padding: 20px 20px 20px 50px;
     margin: 10px 0 10px 0;
-    font-weight: lighter;
+    background-position: left;
+    background-position: 5px;
+    text-align: center;
+
   }
+
+  ::placeholder {
+    font-size: 15px;
+  }
+
 
   .subscribe {
     border: 1px #072acb solid;
     background-color: #072acb;
     color: rgb(255, 255, 255);
-    padding: 10px 30px 10px 30px;
+    padding: 10px 20px 10px 20px;
     margin: 10px 0 10px 0;
     font-weight: lighter;
   }
