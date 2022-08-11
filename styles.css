@@ -50,10 +50,6 @@ body {
 }
 
 
-.nav a:hover {
-    text-decoration: underline #072acb;
-}
-
 .contact a {
     background-color: #072acb;
     color: rgb(255, 255, 255);
@@ -62,11 +58,12 @@ body {
 }
 
 .contact a:hover {
-    background-color: #072AEE
+    background-color: #072AEE;
+
 }
 
 .circlelogo {
-    transition: transform .2s;
+    transition: .2s;
 
 }
 
@@ -108,9 +105,6 @@ header {
     margin: 20px;
 }
 
-.work a:hover {
-    text-decoration: underline #072acb;
-}
 
 .headerimages {
     background-repeat: no-repeat;
@@ -152,7 +146,7 @@ header {
     flex-flow: row wrap;
     height: 96px;
     margin: 0 200px 100px 200px;
-    transition: transform .2s;
+    transition: .2s;
 }
 
 .logos:hover {
@@ -186,11 +180,11 @@ header {
     line-height: 18px;
     display: flex;
     flex-flow: column nowrap;
-    transition: transform .2s;
+    transition: .2s;
 }
 
 .projectboxes div:hover {
-    transform: scale(1.1)
+    transform: scale(1.05)
 }
 
 #projectimageone {
@@ -236,9 +230,6 @@ header {
     padding-top: 50px;
 }
 
-.link-btn a:hover {
-    text-decoration: underline #072acb;
-}
 
 .clientfeedback {
     color: rgb(255, 255, 255);
@@ -310,18 +301,18 @@ header {
 }
 
 .serviceboxes div {
-    width: 300px;
+    width: 25%;
     margin: 0 20px 50px 20px;
     padding: 50px 30px 50px 30px;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     font-size: 17px;
     line-height: 150%;
-    transition: transform .2s;
+    transition: .2s;
 }
 
 .serviceboxes div:hover {
-    transform: scale(1.1)
+    transform: scale(1.05)
 }
 
 .serviceboximage {
@@ -372,11 +363,13 @@ header {
     margin: 10px 0 10px 0;
     font-size: 15px;
     font-weight: lighter;
+    transition: .2s;
 }
 
 .subscribe:hover {
     background-color: #072AEE;
     border: 1px solid #072AEE;
+    transform: scale(1.02)
 }
 
 footer {
@@ -404,15 +397,12 @@ footer {
     color: #514d67;
 }
 
-.footerlist a:hover {
-    text-decoration: underline #072acb;
-}
 
 .footerleft {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start;
-    transition: transform .2s;
+    transition:.2s;
 }
 
 .footerleft:hover {
@@ -450,16 +440,11 @@ footer {
     }
 
     header {
-        display: flex;
-        justify-content: center;
         margin: 0 200px 70px 200px;
-        box-sizing: border-box;
+
     }
 
     .headertext h1 {
-        position: relative;
-        font-family: "Roboto";
-        font-style: normal;
         font-weight: 600;
         font-size: 50px;
         line-height: 50px;
@@ -488,13 +473,11 @@ footer {
     }
 
     .headertext h1 {
-        position: relative;
-        font-family: "Roboto";
-        font-style: normal;
         font-weight: 600;
         font-size: 50px;
         line-height: 50px;
     }
+    
 
 }
 
@@ -525,14 +508,6 @@ footer {
         font-size: 50px;
         line-height: 50px;
         margin: 0;
-    }
-
-    .headerlist {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        list-style: none;
-        padding: 50px 0 50px 0;
     }
 
     .headerimages {
@@ -653,7 +628,7 @@ footer {
     }
 
     .serviceboxes div {
-        width: 250px;
+        width: 30%;
         margin: 0 20px 50px 20px;
         padding: 50px 30px 50px 30px;
         font-size: 15px;
@@ -678,14 +653,15 @@ footer {
         margin: 60px;
     }
 
+    #email {
+        background-image: none;
+        padding: 15px 100px 15px 20px;
+        margin: 10px 0 10px 0;
+    }
 
     .subscribe {
-        border: 1px #072acb solid;
-        background-color: #072acb;
-        color: rgb(255, 255, 255);
-        padding: 16px 30px 14px 30px;
+        padding: 15px 30px 15px 30px;
         margin: 10px 0 10px 0;
-        font-weight: lighter;
     }
 
     footer {
@@ -735,7 +711,7 @@ footer {
     }
 
     .navbar img {
-        padding: 10px 0 10px 40px;
+        padding: 10px 0 10px 0;
     }
 
     .nav {
@@ -748,8 +724,9 @@ footer {
     .nav a {
         display: block;
         color: white;
-        padding: 10px 30px 10px 30px;
+        padding: 10px 30px 10px 0;
     }
+
 
     .nav a:hover {
         background-image: linear-gradient(to right,
@@ -759,17 +736,16 @@ footer {
                 #25aae1,
                 #a2d6f2);
         color: rgb(255, 255, 255);
-        text-decoration: none;
     }
 
     .contact a {
         display: block;
-        text-align: center;
-        padding: 10px 0 10px 40px;
+        padding: 10px 0 10px 10px;
     }
 
     #home {
         background-color: #a2d6f2;
+        padding: 10px 30px 10px 0;
     }
 
 
@@ -800,30 +776,19 @@ footer {
     }
 
     .headerlist {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        list-style: none;
-        padding: 50px 0 50px 0;
-    }
-
-    .headerlist {
-        display: flex;
+        text-align: center;
         flex-flow: column nowrap;
-        list-style: none;
         padding-top: 10px;
         padding-bottom: 0;
         width: 100%;
         margin: 0;
-
     }
 
     .work a {
         color: #514d67;
         margin: 0;
         display: block;
-        text-align: center;
-        padding: 10px 0 10px 40px;
+        padding: 10px 0 10px 0;
     }
 
     .work a:hover {
@@ -834,8 +799,7 @@ footer {
                 #25aae1,
                 #a2d6f2);
         color: rgb(255, 255, 255);
-        padding: 10px 0 10px 40px;
-        text-decoration: none;
+        padding: 10px 0 10px 0;
     }
 
     .headerimages {
@@ -1001,8 +965,6 @@ footer {
 
     .serviceboxes div {
         display: flex;
-        background-color: rgb(255, 255, 255);
-        box-sizing: border-box;
         width: 100%;
         margin: 0 20px 20px 0;
         padding: 0;
@@ -1028,12 +990,6 @@ footer {
         padding-bottom: 10px;
     }
 
-    .link-btn a:hover {
-        text-decoration: underline #072acb;
-        background-color: rgb(255, 255, 255);
-        padding: 0;
-    }
-
     .questions {
         text-align: center;
         background-color: #ffc600;
@@ -1056,10 +1012,8 @@ footer {
     }
 
     .subscribe {
-        border: 1px #072acb solid;
         padding: 10px 20px 10px 20px;
         margin: 10px 0 10px 0;
-        font-weight: lighter;
     }
 
     footer {
