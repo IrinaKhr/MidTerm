@@ -50,9 +50,6 @@ body {
   padding: 10px 30px 10px 30px;
 }
 
-.nav a:hover {
-  text-decoration: underline #072acb;
-}
 
 .circlelogo {
   transition: transform .2s;
@@ -185,9 +182,6 @@ h1 {
   padding-top: 50px;
 }
 
-.link-btn a:hover {
-  text-decoration: underline #072acb;
-}
 
 .questions {
   text-align: center;
@@ -227,11 +221,13 @@ h1 {
   margin: 10px 0 10px 0;
   font-size: 15px;
   font-weight: lighter;
+  transition: .2s;
 }
 
 .subscribe:hover {
   background-color: #072AEE;
   border: 1px solid #072AEE;
+  transform: scale(1.02)
 }
 
 footer {
@@ -259,9 +255,6 @@ footer {
   color: #514d67;
 }
 
-.footerlist a:hover {
-  text-decoration: underline #072acb;
-}
 
 .footerleft {
   display: flex;
@@ -343,13 +336,15 @@ footer {
     margin: 60px;
   }
 
-  .subscribe {
-    border: 1px #072acb solid;
-    background-color: #072acb;
-    color: rgb(255, 255, 255);
-    padding: 16px 30px 14px 30px;
+  #email {
+    background-image: none;
+    padding: 15px 100px 15px 20px;
     margin: 10px 0 10px 0;
-    font-weight: lighter;
+  }
+
+  .subscribe {
+    padding: 15px 30px 15px 30px;
+    margin: 10px 0 10px 0;
   }
 
   footer {
